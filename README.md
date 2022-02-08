@@ -43,6 +43,10 @@ Includes a `Utilities.sol` contract with common testing methods (like creating u
 
 Use `forge install [OPTIONS] [DEPENDENCIES]` _(installs one or more dependencies as git submodules)_
 
+### Update dependencies
+
+You can update a specific dependency to the latest commit on the version you have specified using `forge update [OPTIONS] [DEPENDENCIES]`
+
 ### Linting
 
 Pre-configured `solhint` and `prettier-plugin-solidity`. Can be run by

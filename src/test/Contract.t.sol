@@ -37,11 +37,8 @@ contract ContractTest is DSTest {
     function testTokenFakeMint() public {
         address payable alice = users[0];
         vm.label(alice, "Alice");
-        address payable bob = users[1];
-        vm.label(bob, "Bob");
         utils.writeTokenBalance(alice, DAI, 1_000_000_000 * 1e18);
         uint256 fakeBalance = IERC20(DAI).balanceOf(alice);
-        vm.prank(alice);
         console.log("alice's dai balance", fakeBalance);
         assertEq(fakeBalance, 1_000_000_000 * 1e18);
     }

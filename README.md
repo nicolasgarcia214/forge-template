@@ -1,6 +1,6 @@
 # Forge Template ⚒️
 
-A template that pulled features and utilities from many other implementations to speed up your development process forge.
+A template that pulled features and utilities from many other implementations to speed up your development process with Forge.
 
 ## Foundry Installation
 
@@ -43,6 +43,10 @@ Includes a `Utilities.sol` contract with common testing methods (like creating u
 
 Use `forge install [OPTIONS] [DEPENDENCIES]` _(installs one or more dependencies as git submodules)_
 
+### Update dependencies
+
+You can update a specific dependency to the latest commit on the version you have specified using `forge update [OPTIONS] [DEPENDENCIES]`
+
 ### Linting
 
 Pre-configured `solhint` and `prettier-plugin-solidity`. Can be run by
@@ -59,6 +63,10 @@ Automatically run linting and tests on pull requests.
 ### Default Configuration
 
 Including `.gitignore`, `.vscode`, `remappings.txt`, `foundry.toml` and `.prettierignore`
+
+### Project Configuration
+Forge can be configured using a configuration file called `foundry.toml`, which is placed in the root of your project.
+For more information, visit this link: https://onbjerg.github.io/foundry-book/reference/config.html
 
 ### Acknowledgement
 > This template is based on the following repo: https://github.com/FrankieIsLost/forge-template.

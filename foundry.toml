@@ -6,3 +6,6 @@ verbosity = 3
 src = "contracts"
 out = "artifacts"
 libs = ["node_modules"]
+
+[ci]
+fuzz-runs = 10_000

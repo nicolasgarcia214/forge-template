@@ -1,5 +1,11 @@
 [default]
 verbosity = 3
+fuzz_runs = 5000
+remappings = [
+    'ds-test=lib/forge-std/lib/ds-test/src/',
+    'forge-std=lib/forge-std/src/',
+    'openzeppelin-contracts/=lib/openzeppelin-contracts/contracts/',
+]
 
 ## set only when the `hardhat` profile is selected
 [hardhat]

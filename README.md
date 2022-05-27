@@ -1,5 +1,7 @@
 # Forge Template ⚒️
 
+[![Twitter Follow](https://img.shields.io/twitter/follow/ngp2311?label=Follow%20me%20%40ngp2311&style=social)](https://twitter.com/ngp2311)
+
 A template that pulled features and utilities from many other implementations to speed up your development process with Forge.
 
 ## Foundry Installation

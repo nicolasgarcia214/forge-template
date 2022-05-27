@@ -5,24 +5,32 @@ on:
       - master
   pull_request:
 
+env:
+  FOUNDRY_PROFILE: ci
+
 jobs:
   run-ci:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          submodules: recursive
+
       - uses: actions/setup-node@v2
       - name: Install dev dependencies
         run: npm install
 
       - name: Install Foundry
-        uses: onbjerg/foundry-toolchain@v1
+        uses: foundry-rs/foundry-toolchain@v1
         with:
           version: nightly
 
+      - name: Install submodules
+        run: forge install
+
       - name: Run lint check
         run: npm run lint:check
+
+      - name: Check gas snapshots
+        run: forge snapshot --check
 
       - name: Run tests
         run: forge test

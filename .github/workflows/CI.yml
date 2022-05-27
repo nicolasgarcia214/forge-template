@@ -40,6 +40,7 @@ jobs:
         id: slither
         continue-on-error: true
         with:
+          target: 'src/'
           sarif: results.sarif
 
       - name: Upload SARIF file
